@@ -3,9 +3,9 @@ const books = require('./books');
 
 // GET
 const getAllBooks = (request, h) => {
-  
+
   let allBooks;
-  
+
   const isReading = Number(request.query.reading);
   const isFinished = Number(request.query.finished);
   const bookNameQuery = request.query.name;
